@@ -67,7 +67,7 @@ console.log('Name:',name);
 
 let email=obj.getEmail();
 console.log('email:',email);
-obj.setEmail('dfghjkl');
+obj.setEmail('dfghjkl@gmail.com');
 email=obj.getEmail();
 console.log('email:',email);
 
