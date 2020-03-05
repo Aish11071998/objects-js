@@ -87,20 +87,57 @@ console.log('sex:',sex);
 
 //-----------------------------------------------------------
 
-function person(id)
+var n=prompt('Enter the name')
+
+var m1=prompt('enter mark1')
+if(isNaN(m1))
 {
-  let _id=id;
-  this.name='hjk'
-  this.setid=function(id)
-  {
-    _id=id;
-  }
-  this.getId=function()
-  {
-    return id;
-  }
+    alert('Enter only number')
+    var m1=prompt('enter mark1')
+}
+var m2=prompt('enter mark2')
+if(isNaN(m2))
+{
+    alert('Enter only number')
+    var m2=prompt('enter mark2')
 }
 
-const person =new person('we');
-person.setid(2)
-console.log(person.getId())
+var m3=prompt('enter mark3')
+if(isNaN(m3))
+{
+    alert('Enter only number')
+    var m3=prompt('enter mark3')
+}
+
+const obj1={
+    name:n,
+    mark1:m1,
+    mark2:m2,
+    mark3:m3
+}
+console.log(obj1)
+var sum=obj1.mark1+obj1.mark2+obj1.mark3;
+let num1 = parseInt(m1);
+let num2 = parseInt(m2);
+let num3 = parseInt(m3);
+let total = num1+num2+num3;
+
+const obj2={
+    name:n,
+    total:total
+}
+console.log(obj2);
+let a=parseInt(total);
+let b=a/3;
+const obj3={
+    name:n,
+    avg:b
+}
+console.log(obj3)
+let x=parseInt(b);
+const obj4={
+    name:n,
+    avg:x,
+    total:total
+}
+console.log(obj4)
