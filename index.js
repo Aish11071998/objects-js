@@ -5,6 +5,8 @@ import './style.css';
 const appDiv = document.getElementById('app');
 appDiv.innerHTML = `<h1>JS Starter</h1>`;
 //objects and functions
+
+//object creation with braces
 const obj={
 id:47,
 name:'Aishwarya',
@@ -82,3 +84,23 @@ console.log('sex:',sex);
 obj.setSex('male');
 sex=obj.getSex();
 console.log('sex:',sex);
+
+//-----------------------------------------------------------
+
+function person(id)
+{
+  let _id=id;
+  this.name='hjk'
+  this.setid=function(id)
+  {
+    _id=id;
+  }
+  this.getId=function()
+  {
+    return id;
+  }
+}
+
+const person =new person('we');
+person.setid(2)
+console.log(person.getId())
