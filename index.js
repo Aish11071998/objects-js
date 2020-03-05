@@ -89,6 +89,7 @@ console.log('sex:',sex);
 
 var n=prompt('Enter the name')
 
+
 var m1=prompt('enter mark1')
 if(isNaN(m1))
 {
